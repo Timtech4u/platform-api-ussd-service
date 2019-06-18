@@ -1,6 +1,3 @@
 steps:
 - name: "gcr.io/kaniko-project/executor:latest"
   args: ["--cache=true", "--cache-ttl=6h", "--destination=gcr.io/my-bitnami-hosting/ussd:latest"]
-images:
-- gcr.io/my-bitnami-hosting/ussd:latest"
-timeout: 1200s
