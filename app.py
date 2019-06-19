@@ -38,6 +38,7 @@ def ussd_handler():
             response += "\nEnter any key to continue or cancel."
         
         return response
-
+    
+port = int(os.environ.get("PORT", 8080))
 if __name__ == '__main__':
-    app.run(threaded=True,host='0.0.0.0',port=8080)
+    app.run(threaded=True,host='0.0.0.0',port=port)
